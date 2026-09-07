@@ -3,7 +3,7 @@ import { Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-[80vh] pt-44 pb-32 flex items-center justify-center overflow-hidden bg-black">
+    <section id="anasayfa" className="relative min-h-[80vh] pt-44 pb-32 flex items-center justify-center overflow-hidden bg-black">
       {/* Bosphorus Istanbul Skyline Background Image Overlay */}
       <div className="absolute inset-0 z-0">
         <img

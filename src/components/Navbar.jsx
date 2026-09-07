@@ -18,7 +18,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Ana Sayfa', href: '#hero' },
+    { name: 'Ana Sayfa', href: '#anasayfa' },
     { name: 'Hizmetlerimiz', href: '#hizmetler' },
     { name: 'İletişim', href: '#iletisim' },
   ];
@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* OFFICIAL LOGO */}
-        <a href="#hero" className="flex items-center gap-3.5 group">
+        <a href="#anasayfa" className="flex items-center gap-3.5 group">
           <img
             src="/images/logo.png"
             alt="Kuzey Grup Logo"
