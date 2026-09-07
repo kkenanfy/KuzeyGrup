@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --pure-black: #000000;
+    --card-black: #0d0d10;
+    --border-black: #1a1a20;
+    --yellow-gold: #facc15;
+    --yellow-bright: #ffe066;
+    --yellow-amber: #eab308;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Black & Yellow Gold Luxury Tokens */
+.gold-yellow-text {
+  background: linear-gradient(135deg, #fff3b0 0%, #facc15 50%, #eab308 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-yellow-btn {
+  background: linear-gradient(135deg, #fde047 0%, #facc15 50%, #ca8a04 100%);
+  color: #000000;
+  font-weight: 800;
+}
+
+.gold-yellow-btn:hover {
+  background: linear-gradient(135deg, #fef08a 0%, #fde047 50%, #eab308 100%);
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.4);
+}
+
+.black-card {
+  background-color: #0d0d11;
+  border: 1px solid rgba(250, 204, 21, 0.25);
+}
+
+.black-card:hover {
+  border-color: rgba(250, 204, 21, 0.55);
+  box-shadow: 0 0 30px rgba(250, 204, 21, 0.15);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1e24;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}

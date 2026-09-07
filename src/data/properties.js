@@ -1,0 +1,170 @@
+export const PROPERTY_TYPES = [
+  { id: 'all', name: 'Tüm Tipler' },
+  { id: 'daire', name: 'Daire' },
+  { id: 'dukkan', name: 'Dükkan' },
+  { id: 'arsa', name: 'Arsa' },
+  { id: 'fabrika', name: 'Fabrika' },
+  { id: 'ofis', name: 'Ofis' },
+  { id: 'plaza', name: 'Plaza' },
+];
+
+export const STATUS_TYPES = [
+  { id: 'all', name: 'Satılık & Kiralık' },
+  { id: 'satilik', name: 'Satılık' },
+  { id: 'kiralik', name: 'Kiralık' },
+];
+
+export const propertiesData = [
+  {
+    id: 'prop-1',
+    title: 'Ataşehir Prestij Park 3+1 Lüks Panoramik Daire',
+    type: 'daire',
+    status: 'satilik',
+    price: 14750000,
+    priceFormatted: '14.750.000 ₺',
+    location: 'Ataşehir, İstanbul',
+    area: '165 m²',
+    rooms: '3+1',
+    bathrooms: 2,
+    floor: '14. Kat',
+    age: '0 (Yeni Bina)',
+    heating: 'Merkezi (Pay Ölçer)',
+    featured: true,
+    image: '/images/apartment.png',
+    description: 'Ataşehir merkezinde, finanskent bölgesine komşu, akıllı ev otomasyon sistemine sahip, kapalı otoparklı, yüzme havuzlu ve 7/24 özel güvenlikli lüks residence dairesi.',
+    features: [
+      'Akıllı Ev Otomasyonu',
+      'Ebeveyn Banyosu',
+      'Geniş Balkon & Terasi',
+      'Yüzme Havuzu & Fitness',
+      '7/24 Güvenlik & Kamera',
+      'Kapalı Otopark (2 Araçlık)'
+    ]
+  },
+  {
+    id: 'prop-2',
+    title: 'Kuzey Marine Luxury Villa Compound',
+    type: 'daire',
+    status: 'satilik',
+    price: 38500000,
+    priceFormatted: '38.500.000 ₺',
+    location: 'Beykoz / Riva, İstanbul',
+    area: '420 m²',
+    rooms: '5+2',
+    bathrooms: 4,
+    floor: 'Müstakil Villa',
+    age: '1 Yaşında',
+    heating: 'Yerden Isıtma & Şömine',
+    featured: true,
+    image: '/images/villa.png',
+    description: 'Doğa ile baş başa, müstakil yüzme havuzlu, akıllı güvenlikli, özel peyzajlı bahçesi olan ultra lüks müstakil yaşam alanı.',
+    features: [
+      'Müstakil Yüzme Havuzu',
+      'Özel Peyzaj Bahçesi (650m²)',
+      'Kış Bahçesi & Şömine',
+      'Sauna & Türk Hamamı',
+      'Güneş Enerjisi Altyapısı',
+      'Özel Şarap Mahzeni & Müştemilat'
+    ]
+  },
+  {
+    id: 'prop-3',
+    title: 'Cadde Üstü Yüksek Cirolu Mağaza / Dükkan',
+    type: 'dukkan',
+    status: 'kiralik',
+    price: 85000,
+    priceFormatted: '85.000 ₺ / Ay',
+    location: 'Kadıköy / Bağdat Caddesi, İstanbul',
+    area: '240 m²',
+    rooms: 'Açık Alan',
+    bathrooms: 2,
+    floor: 'Giriş + Bodrum',
+    age: '5 Yaşında',
+    heating: 'VRF Klima Sistemi',
+    featured: true,
+    image: '/images/plaza.png',
+    description: 'Bağdat Caddesi üzerinde insan ve araç trafiğinin en yoğun olduğu lokasyonda, yüksek vitrin cepheli kurumsal kiracıya uygun dükkan.',
+    features: [
+      '12 Metre Vitrin Cephesi',
+      'Giriş Kat + Depo Bodrum',
+      'Baca Altyapısı Mevcut',
+      '3 Faz Sanayi Elektriği',
+      'Kurumsal İmzaya Uygun'
+    ]
+  },
+  {
+    id: 'prop-4',
+    title: 'Kentsel Dönüşüm / Kat Karşılığı Uygun Arsa',
+    type: 'arsa',
+    status: 'satilik',
+    price: 24000000,
+    priceFormatted: '24.000.000 ₺',
+    location: 'Ümraniye / Şerifali, İstanbul',
+    area: '1.250 m²',
+    rooms: 'Arsa / İmar Durumu: Konut+Ticari',
+    bathrooms: 0,
+    floor: 'Emsal: 2.07',
+    age: '-',
+    heating: '-',
+    featured: false,
+    image: '/images/construction.png',
+    description: 'Bölgenin prim potansiyeli en yüksek konumunda, konut ve ticari alan imarlı, kat karşılığı projelendirmeye hazır yüksek emsalli arsa.',
+    features: [
+      'Emsal 2.07 Yüksek İmar',
+      'Hmax: Serbest',
+      'Köşe Parsel Çift Cephe',
+      'Metro İstasyonuna 300 Metre',
+      'Proje Ruhsatı Alınabilir'
+    ]
+  },
+  {
+    id: 'prop-5',
+    title: 'Organize Sanayi Bölgesi Lojistik Fabrika & Depo',
+    type: 'fabrika',
+    status: 'satilik',
+    price: 82000000,
+    priceFormatted: '82.000.000 ₺',
+    location: 'Gebze OSB, Kocaeli',
+    area: '3.800 m²',
+    rooms: 'Üretim + İdari Bina',
+    bathrooms: 6,
+    floor: 'Tek Kat Yüksek Tavan',
+    age: '4 Yaşında',
+    heating: 'Radyant Isıtma',
+    featured: false,
+    image: '/images/plaza.png',
+    description: 'Tır yanaşma rampalı, 10 metre tavan yüksekliği, 1000 kVA trafoya sahip, uluslararası lojistik ve üretim kriterlerine tam uyumlu tesis.',
+    features: [
+      'Tavan Yüksekliği: 10m',
+      'Trafo Gücü: 1000 kVA',
+      '4 Adet Otomatik Tır Rampası',
+      'İdari Ofis Katları (450m²)',
+      'Yangın Sprinkler Sistemi'
+    ]
+  },
+  {
+    id: 'prop-6',
+    title: 'Maslak Plaza Katında A Plus Lüks Ofis',
+    type: 'ofis',
+    status: 'kiralik',
+    price: 160000,
+    priceFormatted: '160.000 ₺ / Ay',
+    location: 'Maslak / Büyükdere Cad., İstanbul',
+    area: '310 m²',
+    rooms: 'Hazır Hazırlanmış Bölmeler',
+    bathrooms: 3,
+    floor: '18. Kat',
+    age: '2 Yaşında',
+    heating: 'Merkezi İklimlendirme',
+    featured: true,
+    image: '/images/plaza.png',
+    description: 'Büyükdere Caddesi üzerinde, LEED Sertifikalı A Plus plazada hazır dekorasyonlu, Boğaz manzaralı prestijli yönetim ofisi.',
+    features: [
+      'Panoramik Boğaz Manzarası',
+      'Hazır Mobilyalı & Dekore',
+      'Toplantı Salonu & Mutfak',
+      'VIP Asansör Kartlı Geçiş',
+      'Valet Parking Servisi'
+    ]
+  }
+];
